@@ -30,6 +30,7 @@ func main() {
 	p, err := google.New(
 		project,
 		iaas.WithSO("windows-cloud/global/images/windows-server-1803-dc-core-for-containers-v20181009"),
+		iaas.WithDiskSize(32),
 	)
 	if err != nil {
 		log.Println(err)
