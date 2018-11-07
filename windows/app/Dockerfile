@@ -1,5 +1,4 @@
-FROM golang:windowsservercore-1803
+FROM microsoft/windowsservercore
 WORKDIR "C:\\"
-COPY ./app .
-RUN go build -o app.exe
+COPY app.exe .
 CMD ["app.exe"]

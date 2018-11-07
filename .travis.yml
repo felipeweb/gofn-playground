@@ -1,0 +1,13 @@
+language: go
+os:
+  - windows
+
+services:
+  - docker
+
+install: true
+
+script:
+  - docker login -u="$DOCKER_LOGIN" -p="$DOCKER_PASSWORD"
+  - docker build -t felipeweb/windowstest:latest ./windows/app
+  - docker push felipeweb/windowstest:latest
