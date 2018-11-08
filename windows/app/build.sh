@@ -1,2 +1,2 @@
 #! /bin/sh
-GOOS=windows go build -o app.exe
+GOOS=windows go build -o app2.exe
