@@ -4,11 +4,8 @@ import (
 	"context"
 	"fmt"
 	"log"
-	"os"
 
 	"github.com/gofn/gofn"
-	"github.com/gofn/gofn/iaas"
-	"github.com/gofn/gofn/iaas/google"
 	"github.com/gofn/gofn/provision"
 )
 
